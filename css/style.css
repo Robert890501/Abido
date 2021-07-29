@@ -310,6 +310,12 @@ margin-left: 15px;
     display: none;
 }
 @media (max-width: 1200px) {
+    .banner {
+        max-width: 200px;
+    }
+    .content {
+        max-width: 400px;
+    }
     .container {
         max-width: 960px;
     }
@@ -322,14 +328,30 @@ margin-left: 15px;
     }
 }
 @media (max-width: 992px) {
+    .banner {
+        display: block;
+    }
+    .content {
+        max-width: 300px;
+    }
     .container {
         max-width: 740px;
     }
     .card-image {
         height: 150px;
     }
+    .author {
+        min-width: 200px;
+    }
 }
 @media (max-width: 768px) {
+    .main-single {
+        display: block;
+        align-items: flex-start;
+        }
+    .content {
+        display: block;
+        }
     .close-menu {
         display: block;
         position: absolute;
@@ -387,11 +409,16 @@ margin-left: 15px;
         display: flex;
         flex-direction: column;
     }
+    .content {
+        max-width: 90%;
 }
 @media (max-width: 576px) {
-    .container {
+   /*  .container {
         max-width: 90%;
-    }
+    } не работает */
+    .swiper-container {
+        display: content;
+    }    
     .page-content{
         grid-template-columns: 12fr;
     }
